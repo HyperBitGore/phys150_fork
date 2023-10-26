@@ -78,7 +78,7 @@ def count_steps(fp):
             fp.write('{0},{1}\n'.format(t3,num_steps))
             fp.flush()
             time.sleep(0.1)
-        if cpx.button_b:
+        elif cpx.button_b:
             cpx.red_led = False
             cp.pixels[0]=(0,50,0)
             num_steps = 0
